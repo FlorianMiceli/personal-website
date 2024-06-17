@@ -3,9 +3,9 @@
 @tailwind utilities; */
 
 body {
-    background-color: #09090b;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  background-color: #09090b;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* Inter Fonts */
 :root {

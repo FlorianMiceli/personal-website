@@ -1,57 +1,92 @@
+<script setup lang="ts">
+// import Edit from "@element-plus/icons-vue"
+import { Edit } from '@element-plus/icons-vue'
+</script>
 <template>
   <Header />
-  <el-main> 
-    <h1>
+  <Rays/>
+
+  <el-divider></el-divider>
+  <el-divider></el-divider>
+  <el-main>
+    <!-- <el-empty description="Nothing here" class="empty" /> -->
+    <!-- <h1 class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt
+      porro deserunt rem dolorum, facilis labore architecto delectus laborum
+      odio similique expedita esse numquam itaque voluptas molestias eveniet
+      deleniti eaque!
+    </h1> -->
+      <el-text class="desc">
+  
+        Hi👋, I'm Florian, trainee software engineer based in France. I'm
+        currently working at   
       
+  
+        <el-link type="info" class="link" href="https://www.sensome.com">
+          <el-icon class="el-icon--left">
+            <div class="logo"><img src="./assets/sensome_logo.svg" alt="Sensome Logo" width="45" /></div>
+          </el-icon>
+          <el-text class="link-text">
+            Sensome
+          </el-text>
+        </el-link>
+
+        , helping to save lives. Learning Computer Science at
+  
+        <el-link type="info" style="margin-left: 2.4%; margin-right: -17px" href="https://www.polytech.universite-paris-saclay.fr/">
+          <el-icon>
+            <div class="logo"><img src="./assets/polytech_logo.svg" alt="Polytech Logo" width="42" /></div  >
+          </el-icon>
+          <el-text class="link-text">
+            Polytech Paris-Saclay
+          </el-text>
+        </el-link>
+        .
+      </el-text>
+      <el-divider></el-divider>
+      Take a look at the content below 👇
+
+
+      <h1 class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas,
+        sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita
+        officiis rerum porro nisi repellendus repellat velit doloribus esse
+        explicabo!
+      </h1>
+    <h1 class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas,
+      sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita
+      officiis rerum porro nisi repellendus repellat velit doloribus esse
+      explicabo!
+    </h1>
+    <h1 class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas,
+      sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita
+      officiis rerum porro nisi repellendus repellat velit doloribus esse
+      explicabo!
     </h1>
   </el-main>
-  <Rays class="rayslight" />
 </template>
 
 <style scoped>
-.header {
-  /* text color white */
-  color: white;
-  padding: 12px;
-  align-items: center;
-  display: flex;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.09);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.9px);
-  -webkit-backdrop-filter: blur(5.9px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.logo {
+  margin-bottom: 4px !important;
+  margin-right: 160%;
 }
 
-.title {
-  align-items: center;
-  justify-content: left;
-  color: rgba(255, 255, 255);
-  margin-bottom: 2px;
+.link {
+  margin-left: 2.4%;
 }
 
-/* .el-container {
-  border: 1px solid white;
-} */
-
-.links {
-  justify-content: center;
+.link-text {
+  color: #909399;
+  font-size: 58px;
+  margin-top: -11px;
+  margin-left: 12px
 }
 
-.link{
-  margin-inline: 20px;
-
+.desc {
+  font-size: 58px;
+  margin-top: 150px;
 }
-
-.action-button {
-  margin-inline: -5px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  font-family:system-ui, sans-serif;
-}
-
-
 </style>
