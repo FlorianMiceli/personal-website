@@ -64,7 +64,8 @@
   z-index: -1;
   margin-left: -150px;
   margin-top: -110px;
-  width: 700px;
+  width: 800px;
+  height: 800px
 }
 </style>
 ```

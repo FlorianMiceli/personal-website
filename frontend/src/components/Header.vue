@@ -1,8 +1,8 @@
 <template>
   <el-header class="header" height="40px">
-    <el-link :underline="false" class="title">Florian's world✨</el-link>
+    <el-link :underline="false" class="title" href="/">Florian's world✨</el-link>
     <el-container class="links">
-      <el-link :underline="false" type="info" class="link">Test</el-link>
+      <el-link :underline="false" type="info" class="link" href="/blabla">Test</el-link>
       <el-link :underline="false" type="info" class="link">Test</el-link>
       <el-link :underline="false" type="info" class="link">Test</el-link>
       <el-link :underline="false" type="info" class="link">Test</el-link>

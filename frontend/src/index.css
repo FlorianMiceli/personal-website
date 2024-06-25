@@ -3,8 +3,13 @@
 @tailwind utilities; */
 
 body {
+  position: relative;
   background-color: #09090b;
   -moz-osx-font-smoothing: grayscale;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.205) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.205), transparent 1px);
 }
 
 /* Inter Fonts */

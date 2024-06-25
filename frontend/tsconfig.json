@@ -1,16 +1,10 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
+    "include": ["./typed-router.d.ts"],
+    "compilerOptions": {
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["element-plus/global", "unplugin-vue-router/client"],
+        "moduleResolution": "Bundler",
+        "module": "ESNext"
     }
-  ],
-  "compilerOptions": {
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["element-plus/global"]
-  }
 }
