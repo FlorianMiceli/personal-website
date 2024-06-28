@@ -2,8 +2,6 @@
 </script>
 <template>
     <el-main>
-        <!-- <el-empty description="Nothing here" class="empty" /> -->
-
         <div class="top">
             <el-text class="desc">
                 Hi👋, I'm Florian, trainee software engineer based in France. I'm currently working at
