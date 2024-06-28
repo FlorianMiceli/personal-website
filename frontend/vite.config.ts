@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from "node:url";
 
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import Vue from "@vitejs/plugin-vue";
 import VueRouter from "unplugin-vue-router/vite";
 import { VueRouterAutoImports } from "unplugin-vue-router";
 
@@ -13,7 +13,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 export default defineConfig({
     plugins: [
         VueRouter({}),
-        vue(),
+        Vue(),
         AutoImport({
             resolvers: [ElementPlusResolver()],
             imports: [VueRouterAutoImports],
