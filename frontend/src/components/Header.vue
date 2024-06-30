@@ -5,6 +5,7 @@
         <el-container class="links">
             <Link route="links" title="Socials" class="link" />
             <Link route="projects" title="Projects" class="link" />
+            <Link route="tech-stack" title="My dev stack" class="link" />
             <Link route="upcoming" title="Upcoming..." class="link" />
         </el-container>
 
