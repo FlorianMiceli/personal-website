@@ -17,6 +17,7 @@
 .header {
     color: white;
     padding: 12px;
+    margin: 4px;
     align-items: center;
     display: flex;
     /* From https://css.glass */
