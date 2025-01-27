@@ -24,5 +24,5 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div ref="AnimationComponentContainer"></div>
+    <div ref="AnimationComponentContainer" class="text-white"></div>
 </template> 

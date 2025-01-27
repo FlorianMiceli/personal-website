@@ -82,11 +82,11 @@ body {
     @apply bg-[hsl(var(--background))] text-[#ffffff];
   }
 }
-/* @layer base {
+@layer base {
   * {
     @apply border-[hsl(var(--border))];
   }
   body {
     @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
   }
-} */
+}

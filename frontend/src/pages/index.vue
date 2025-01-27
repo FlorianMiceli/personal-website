@@ -11,16 +11,6 @@ router.push('')
         <div class="top">
             <PresentationTextEffect />
         </div>
-        
-        <div class="content text-[#ffffff]">
-            Take a look at the content below 👇
-        </div>
-
-        <div>
-            <h1 class="text-5xl font-bold text-[#ffffff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas, sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita officiis rerum porro nisi repellendus repellat velit doloribus esse explicabo!</h1>
-            <h1 class="desc text-[#ffffff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas, sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita officiis rerum porro nisi repellendus repellat velit doloribus esse explicabo!</h1>
-            <h1 class="desc text-[#ffffff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas, sed cumque quisquam aut debitis, magni obcaecati nulla qui expedita officiis rerum porro nisi repellendus repellat velit doloribus esse explicabo!</h1>
-        </div>
     </el-main>
 </template>
 

@@ -113,7 +113,10 @@ const splitText = (text: React.ReactNode, per: PerType): React.ReactNode[] => {
   // If it's a string, split it normally
   if (typeof text === 'string') {
     if (per === 'line') return text.split('\n');
-    if (per === 'char') return text.split('');
+    if (per === 'char') {
+      // First split into words, then handle characters within words
+      return text.split(/(\s+)/).filter(Boolean);
+    }
     return text.split(/(\s+)/);
   }
 
@@ -127,26 +130,26 @@ const splitText = (text: React.ReactNode, per: PerType): React.ReactNode[] => {
     }, []);
   }
 
-  // If it's a React element, process its children for char animation
-  if (React.isValidElement(text) && per === 'char') {
+  // If it's a React element, process its children
+  if (React.isValidElement(text)) {
     const children = React.Children.toArray(text.props.children);
     const processedChildren = children.map(child => {
       if (typeof child === 'string') {
-        return child.split('').map((char, i) => (
-          <motion.span
-            key={`${text.key}-char-${i}`}
-            className="inline-block whitespace-pre"
-          >
-            {char}
-          </motion.span>
-        ));
+        if (per === 'char') {
+          // Split into words first
+          return child.split(/(\s+)/).filter(Boolean).map((word, i) => (
+            <span key={`${text.key}-word-${i}`} className="inline-block">
+              {word}
+            </span>
+          ));
+        }
+        return child;
       }
       return child;
     });
     return [React.cloneElement(text, { ...text.props, children: processedChildren })];
   }
 
-  // If it's a single React element or other type, return it as is
   return [text];
 };
 
@@ -163,15 +166,19 @@ const AnimationComponent: React.FC<{
         ...segment.props,
         children: React.Children.map(segment.props.children, child => {
           if (typeof child === 'string' && per === 'char') {
-            return child.split('').map((char, i) => (
-              <motion.span
-                key={`char-${i}`}
-                variants={variants}
-                className="inline-block whitespace-pre"
-              >
-                {char}
-              </motion.span>
-            ));
+            return (
+              <span className="inline-block whitespace-pre">
+                {child.split('').map((char, i) => (
+                  <motion.span
+                    key={`char-${i}`}
+                    variants={variants}
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+            );
           }
           return child;
         })
@@ -206,18 +213,18 @@ const AnimationComponent: React.FC<{
         {segment}
       </motion.span>
     ) : (
-      <motion.span className='inline-block whitespace-pre'>
+      <span className="inline-block whitespace-pre">
         {segment.split('').map((char, charIndex) => (
           <motion.span
             key={`char-${charIndex}`}
             aria-hidden='true'
             variants={variants}
-            className='inline-block whitespace-pre'
+            className='inline-block'
           >
             {char}
           </motion.span>
         ))}
-      </motion.span>
+      </span>
     );
 
   if (!segmentWrapperClassName) {
