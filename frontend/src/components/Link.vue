@@ -7,7 +7,7 @@ defineProps<{
 <template>
     <el-link
         :underline="false"
-        :type="$route.name === `/${route}` ? '' : 'info'"
+        :type="$route.name === `/${route}` ? 'default' : 'info'"
         :href="`/${route}`"
     > 
             {{ title }}
