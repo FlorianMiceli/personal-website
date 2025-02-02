@@ -71,7 +71,11 @@ module.exports = {
   				to: {
   					height: 0
   				}
-  			}
+  			},
+  			fadeIn: {
+  				'0%': { opacity: '0' },
+  				'100%': { opacity: '0.7' },
+  			},
   		},
   		animation: {
   			slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',

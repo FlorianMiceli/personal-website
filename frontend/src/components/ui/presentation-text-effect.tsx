@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { TextEffect, PresetType, PerType } from './text-effect';
+import wavingHandEmoji from '../../assets/emojis/waving_hand_color_default.svg';
 
 export function PresentationTextEffect() {
   return (
@@ -11,7 +12,13 @@ export function PresentationTextEffect() {
         delay={0.5}
         className="text-3xl md:text-5xl lg:text-6xl font-bold leading-normal"
       >
-        ✦ Hello, I'm Florian, trainee software engineer based in France.
+        ✦ <span className="relative">
+          Hello
+          <span 
+            className="absolute inline-block w-[80px] h-[80px] bg-no-repeat bg-contain opacity-0 transform -rotate-12 scale-150 -translate-x-12 -translate-y-16 pointer-events-none animate-[fadeIn_0.5s_ease-in-out_0.6s_forwards]"
+            style={{ backgroundImage: `url(${wavingHandEmoji})`, backgroundPosition: 'center' }}
+          />
+        </span>, I'm Florian, trainee software engineer based in France.
       </TextEffect>
 
       <TextEffect
