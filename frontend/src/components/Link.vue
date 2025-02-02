@@ -5,11 +5,11 @@ defineProps<{
 }>()
 </script>
 <template>
-    <el-link
-        :underline="false"
-        :type="$route.name === `/${route}` ? 'default' : 'info'"
-        :href="`/${route}`"
+    <router-link
+        :to="route"
+        class="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+        :class="{ 'text-white': $route.path === `/${route}` }"
     > 
-            {{ title }}
-    </el-link>
+        {{ title }}
+    </router-link>
 </template>
