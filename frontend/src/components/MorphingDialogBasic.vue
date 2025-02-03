@@ -4,16 +4,14 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { MorphingDialogBasic as ReactMorphingDialogBasic } from './ui/morphing-dialog-basic'
 
-export interface Props {
+const props = defineProps<{
   title: string
   subtitle: string
   description: string[]
   arenaLink?: string
   imageSrc?: string
   imageAlt?: string
-}
-
-const props = defineProps<Props>()
+}>()
 const MorphingDialogContainer = ref<HTMLElement | null>(null)
 let root: any = null
 
