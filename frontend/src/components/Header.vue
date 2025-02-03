@@ -22,7 +22,7 @@
     z-index: 50;
     color: white;
     padding: 12px;
-    margin: 4px;
+    margin: 8px;
     align-items: center;
     display: flex;
     /* From https://css.glass */

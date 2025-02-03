@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import PresentationTextEffect from '../components/PresentationTextEffect.vue'
-
+import RisingStars from '../components/stunning/RisingStars.vue'
 const router = useRouter()
 router.push('')
 </script>
 
 <template>
     <el-main>
+        <RisingStars :size=512 />
         <div class="top">
             <PresentationTextEffect />
         </div>

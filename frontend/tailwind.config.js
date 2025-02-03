@@ -76,10 +76,19 @@ module.exports = {
   				'0%': { opacity: '0' },
   				'100%': { opacity: '0.7' },
   			},
+            risingstar: {
+                from: {
+                    transform: 'translateY(0px)'
+                },
+                to: {
+                    transform: 'translateY(-3840px)'
+                }
+            }
   		},
   		animation: {
   			slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-  			slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)'
+  			slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+            risingstar: 'risingstar 1000s linear infinite'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
