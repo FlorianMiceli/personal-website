@@ -41,15 +41,20 @@ const links: LinkProps[] = [
 </script>
 
 <template>
-    <div class="h-screen flex flex-col items-center justify-center relative">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
-            <TextRoll text="Projects" :duration="0.4" className="text-9xl font-bold text-white" />
+    <div class="min-h-screen flex flex-col items-center justify-center relative py-20">
+        <div class="absolute top-24 sm:top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center w-full px-4">
+            <TextRoll 
+                text="Projects" 
+                :duration="0.4" 
+                className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white" 
+            />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 sm:mt-32">
             <MorphingDialogBasic
                 v-for="link in links"
                 :key="link.title"
                 v-bind="link"
+                class="w-full"
             />
         </div>
     </div>
