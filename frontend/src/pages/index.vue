@@ -12,6 +12,7 @@ router.push('')
         <div class="top">
             <PresentationTextEffect />
         </div>
+        <FancyButton class="mt-8" text=" 🚧 Website Work in Progress !" />
     </el-main>
 </template>
 

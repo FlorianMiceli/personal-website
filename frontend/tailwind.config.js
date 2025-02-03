@@ -83,12 +83,21 @@ module.exports = {
                 to: {
                     transform: 'translateY(-3840px)'
                 }
+            },
+            shimmer: {
+                '0%, 90%, 100%': {
+                    'background-position': 'calc(-100% - var(--shimmer-width)) 0'
+                },
+                '30%, 60%': {
+                    'background-position': 'calc(100% + var(--shimmer-width)) 0'
+                }
             }
   		},
   		animation: {
   			slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
   			slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-            risingstar: 'risingstar 1000s linear infinite'
+            risingstar: 'risingstar 1000s linear infinite',
+            shimmer: 'shimmer 8s infinite'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
