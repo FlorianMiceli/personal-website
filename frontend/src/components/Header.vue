@@ -1,61 +1,25 @@
 <template>
-    <el-header class="header" height="40px">
-        <el-link :underline="false" class="title" href="/">Florian's world✨</el-link>
+    <el-header
+        class="fixed top-0 left-0 right-0 z-50 text-white p-3 m-2 flex items-center bg-white/[0.09] rounded-[10px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[5.9px] border border-white/30"
+        height="40px"
+    >
+        <el-link :underline="false" class="flex items-center justify-start text-white mb-0.5" href="/">
+            Florian's world✨
+        </el-link>
 
-        <el-container class="links">
-            <Link route="links" title="Socials" class="link" />
-            <Link route="projects" title="Projects" class="link" />
-            <Link route="tech-stack" title="My dev stack" class="link" />
-            <Link route="upcoming" title="Upcoming..." class="link" />
+        <el-container class="justify-center">
+            <Link route="links" title="Socials" class="mx-5" />
+            <Link route="projects" title="Projects" class="mx-5" />
+            <Link route="tech-stack" title="My dev stack" class="mx-5" />
+            <Link route="upcoming" title="Upcoming..." class="mx-5" />
         </el-container>
 
-        <el-button type="primary" size="small" class="action-button">action</el-button>
+        <el-button 
+            type="primary" 
+            size="small"
+            class="-mx-[5px] rounded-[5px] bg-white/[0.09] border border-white/30 text-white font-[system-ui,sans-serif]"
+        >
+            action
+        </el-button>
     </el-header>
 </template>
-
-<style scoped>
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    color: white;
-    padding: 12px;
-    margin: 8px;
-    align-items: center;
-    display: flex;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.09);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.title {
-    align-items: center;
-    justify-content: left;
-    color: rgba(255, 255, 255);
-    margin-bottom: 2px;
-}
-
-.links {
-    justify-content: center;
-}
-
-.link {
-    margin-inline: 20px;
-}
-
-.action-button {
-    margin-inline: -5px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    font-family: system-ui, sans-serif;
-}
-</style>
-```
