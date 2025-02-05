@@ -1,9 +1,5 @@
 <script setup lang="ts">
 import TextRoll from '../components/TextRoll.vue'
-import MorphingDialogBasic, { type Props as LinkProps } from '../components/MorphingDialogBasic.vue'
-import personalWebsitePreview from '../assets/personal_website_preview.png'
-import musicMatchingAppPreview from '../assets/polymatch_preview.png'
-import activityTrackingPreview from '../assets/activity_tracking_preview.png'
 
 
 </script>
@@ -17,7 +13,8 @@ import activityTrackingPreview from '../assets/activity_tracking_preview.png'
                 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white" 
             />
         </div>
-        <DockExample />
+        <SocialsDock />
     </div>
+
 
 </template>

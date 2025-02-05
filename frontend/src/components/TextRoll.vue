@@ -6,9 +6,9 @@ import { TextRoll as ReactTextRoll } from './ui/text-roll'
 
 
 const props = defineProps<{
-    text: string
-    duration?: number
-    className?: string
+  text: string
+  duration?: number
+  className?: string
 }>()
 const TextRollContainer = ref<HTMLElement | null>(null)
 let root: any = null
@@ -35,4 +35,4 @@ onBeforeUnmount(() => {
 
 <template>
   <div ref="TextRollContainer"></div>
-</template> 
+</template>

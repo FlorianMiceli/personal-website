@@ -1,6 +1,10 @@
 const { green, grass, mauve } = require('@radix-ui/colors')
 
 /** @type {import('tailwindcss').Config} */
+
+import { setupInspiraUI } from "@inspira-ui/plugins";
+import animate from "tailwindcss-animate";
+
 module.exports = {
     darkMode: ['class'],
     content: [
@@ -100,6 +104,7 @@ module.exports = {
             shimmer: 'shimmer 8s infinite'
   		},
   		borderRadius: {
+  			xl: "calc(var(--radius) + 4px)",
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
@@ -112,5 +117,5 @@ module.exports = {
   		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate, setupInspiraUI],
 }

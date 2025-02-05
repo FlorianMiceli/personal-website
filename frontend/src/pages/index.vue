@@ -1,36 +1,19 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import PresentationTextEffect from '../components/PresentationTextEffect.vue'
-import RisingStars from '../components/stunning/RisingStars.vue'
 const router = useRouter()
 router.push('')
 </script>
 
 <template>
-    <el-main>
+    <div class="relative">
         <RisingStars :size=512 />
-        <div class="top">
-            <PresentationTextEffect />
+        <div class="h-screen flex flex-col items-center justify-center">
+            <div class="pt-12 px-12 pb-8">
+                <PresentationTextEffect />
+            </div>
+            <div>
+                <FancyButton class="mt-4 xl:mt-8" text=" 🚧 Website Work in Progress !" />
+            </div>
         </div>
-        <FancyButton class="mt-8" text=" 🚧 Website Work in Progress !" />
-    </el-main>
+    </div>
 </template>
-
-<style scoped>
-.top {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
-}
-
-.content {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
-
-.desc {
-    font-size: 58px;
-    margin-top: 10%;
-    text-align: justify;
-    text-justify: inter-word;
-}
-</style>
