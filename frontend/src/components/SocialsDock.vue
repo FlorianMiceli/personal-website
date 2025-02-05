@@ -39,7 +39,7 @@ const openLink = (href: string) => {
 }
 </script>
 <template>
-    <Dock class="mb-6 border-gray-200">
+    <Dock class="mb-6 border-gray-600">
         <DockIcon v-for="link in links" :key="link.name">
             <img :src="link.icon" :alt="link.name" class="h-full w-full object-contain" @click="openLink(link.href)" />
         </DockIcon>
