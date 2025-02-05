@@ -8,8 +8,8 @@
         </el-link>
 
         <el-container class="justify-center">
-            <Link route="links" title="Socials" class="mx-5" />
             <Link route="projects" title="Projects" class="mx-5" />
+            <Link route="links" title="Socials" class="mx-5" />
             <Link route="tech-stack" title="My dev stack" class="mx-5" />
             <Link route="upcoming" title="Upcoming..." class="mx-5" />
         </el-container>
