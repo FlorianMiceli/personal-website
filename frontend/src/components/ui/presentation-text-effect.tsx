@@ -5,7 +5,7 @@ import wavingHandEmoji from '../../assets/emojis/waving_hand_color_default.svg';
 
 export function PresentationTextEffect() {
   return (
-    <div className="flex flex-col md:space-y-6 lg:space-y-6 xl:space-y-8">
+    <div className="flex flex-col ">
       <TextEffect
         preset="blur"
         per="char"
@@ -25,7 +25,7 @@ export function PresentationTextEffect() {
         preset="blur"
         per="char"
         delay={3.5}
-        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center"
+        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center mt-6"
       >
         I'm currently working at{' '}
         <a 
@@ -36,14 +36,14 @@ export function PresentationTextEffect() {
         >
           Sensome
         </a>
-        , helping to save lives.
+        , helping to create life-saving devices.
       </TextEffect>
 
       <TextEffect
         preset="blur"
         per="char"
         delay={6}
-        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center"
+        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center mt-10"
       >
         Also studying computer science at{' '}
         <a 
