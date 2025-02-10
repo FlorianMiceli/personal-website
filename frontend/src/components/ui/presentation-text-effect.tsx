@@ -10,7 +10,7 @@ export function PresentationTextEffect() {
         preset="blur"
         per="char"
         delay={0.5}
-        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center"
+        className="text-3xl md:text-4xl lg:text-[3.5rem] xl:text-[4.5rem] text-center"
       >
         <span className="relative leading-tight">
           Hello
@@ -25,7 +25,7 @@ export function PresentationTextEffect() {
         preset="blur"
         per="char"
         delay={3.5}
-        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center mt-6"
+        className="text-3xl md:text-4xl lg:text-[3.5rem] xl:text-[4.5rem] text-center mt-6"
       >
         I'm currently working at{' '}
         <a 
@@ -43,7 +43,7 @@ export function PresentationTextEffect() {
         preset="blur"
         per="char"
         delay={6}
-        className="text-3xl md:text-4xl lg:text-[3.5rem] text-center mt-10"
+        className="text-3xl md:text-4xl lg:text-[3.5rem] xl:text-[4.5rem] text-center mt-10"
       >
         Also studying computer science at{' '}
         <a 
