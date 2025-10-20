@@ -1,3 +1,6 @@
 {
+    "redirects": [
+        { "source": "/blog", "destination": "https://florianmiceli.weebly.com/", "permanent": true }
+    ],
     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
