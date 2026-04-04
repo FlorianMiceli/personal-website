@@ -1,6 +1,7 @@
 {
     "redirects": [
-        { "source": "/blog", "destination": "https://florianmiceli.weebly.com/", "permanent": true }
+        { "source": "/blog", "destination": "https://florianmiceli.weebly.com/", "permanent": true },
+        { "source": "/trace", "destination": "https://florianmiceli-trace-app.vercel.app/", "permanent": true }
     ],
     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
