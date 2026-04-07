@@ -190,8 +190,8 @@ function MorphingDialogContent({
         setLastFocusableElement(
           focusableElements[focusableElements.length - 1] as HTMLElement
         );
-        (focusableElements[0] as HTMLElement).focus();
       }
+      containerRef.current?.focus();
     } else {
       document.body.classList.remove('overflow-hidden');
       triggerRef.current?.focus();
@@ -208,10 +208,14 @@ function MorphingDialogContent({
     <motion.div
       ref={containerRef}
       layoutId={`dialog-${uniqueId}`}
-      className={cn('overflow-hidden', className)}
+      className={cn(
+        'overflow-hidden outline-none focus:outline-none',
+        className
+      )}
       style={style}
       role='dialog'
       aria-modal='true'
+      tabIndex={-1}
       aria-labelledby={`motion-ui-morphing-dialog-title-${uniqueId}`}
       aria-describedby={`motion-ui-morphing-dialog-description-${uniqueId}`}
     >

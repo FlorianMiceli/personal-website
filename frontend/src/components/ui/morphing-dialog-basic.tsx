@@ -17,6 +17,7 @@ interface MorphingDialogBasicProps {
   subtitle: string;
   description: string[];
   arenaLink?: string;
+  liveUrl?: string;
   imageSrc?: string;
   imageAlt?: string;
 }
@@ -26,6 +27,7 @@ export function MorphingDialogBasic({
   subtitle,
   description,
   arenaLink,
+  liveUrl,
   imageSrc,
   imageAlt = 'Default image alt text'
 }: MorphingDialogBasicProps) {
@@ -110,6 +112,16 @@ export function MorphingDialogBasic({
                   rel='noopener noreferrer'
                 >
                   Are.na block
+                </a>
+              )}
+              {liveUrl && (
+                <a
+                  className='mt-2 inline-flex break-all text-zinc-500 underline'
+                  href={liveUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {liveUrl}
                 </a>
               )}
             </MorphingDialogDescription>

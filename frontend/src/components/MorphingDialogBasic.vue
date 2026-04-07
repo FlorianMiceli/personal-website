@@ -9,6 +9,7 @@ const props = defineProps<{
   subtitle: string
   description: string[]
   arenaLink?: string
+  liveUrl?: string
   imageSrc?: string
   imageAlt?: string
 }>()
@@ -24,6 +25,7 @@ onMounted(() => {
         subtitle: props.subtitle,
         description: props.description,
         arenaLink: props.arenaLink,
+        liveUrl: props.liveUrl,
         imageSrc: props.imageSrc,
         imageAlt: props.imageAlt,
       })
