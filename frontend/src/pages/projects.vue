@@ -48,7 +48,7 @@ const links: LinkProps[] = [
             "Trace is a single-page web app that lets you load your own Google Maps Timeline (Location History) and explore it on an interactive map.",
             "Runs in the browser, your data never leaves your computer.",
         ],
-        liveUrl: "https://florianmiceli.com/trace/",
+        liveUrl: "https://florianmiceli.dev/trace",
     }
 ]
 </script>
