@@ -1,9 +1,10 @@
 // import './assets/main.css'
 
-import { createApp } from "vue";
+import { createApp, Fragment, h } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import { routes } from "vue-router/auto-routes";
 import { createPinia } from "pinia";
+import { SpeedInsights } from "@vercel/speed-insights/vue";
 import App from "./App.vue";
 
 import "./index.css";
@@ -14,4 +15,11 @@ const router = createRouter({
     routes,
 });
 
-createApp(App).use(router).use(createPinia()).mount("#app");
+createApp({
+    render() {
+        return h(Fragment, null, [h(SpeedInsights), h(App)]);
+    },
+})
+    .use(router)
+    .use(createPinia())
+    .mount("#app");
